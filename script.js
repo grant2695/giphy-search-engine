@@ -12,7 +12,7 @@ window.addEventListener ('load',(event)=>{
     const searchStr = document.querySelector('#search-box').value
 
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=20&part=snippet&q=${searchStr}&limit=15`
-    const output = document.getElementById("container")
+    const output = document.getElementById("container-fluid")
     output.innerHTML = " "
     console.log('the url is',url)
     console.log('your have searched for', searchStr)
@@ -27,7 +27,7 @@ window.addEventListener ('load',(event)=>{
 
 
        div = document.createElement(`div`)
-        output.innerHTML += `<img src=${item.images.original.webp} width='200px' height='auto' onerror="this.onerror=null; alt="">`
+        output.innerHTML += `<div class="d-inline-flex p-2 bd-highlight"><div><img src=${item.images.original.webp}  onerror="this.onerror=null; alt=""></div></div>`
 
 
 
