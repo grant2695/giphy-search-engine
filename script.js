@@ -27,7 +27,7 @@ window.addEventListener ('load',(event)=>{
 
 
        div = document.createElement(`div`)
-        output.innerHTML += `<div class="d-inline-flex p-2 bd-highlight"><div><img src=${item.images.original.webp}  onerror="this.onerror=null; alt=""></div></div>`
+        output.innerHTML += `<div class="d-inline-flex p-2 bd-highlight"><div class='justify-self-center'><img src=${item.images.original.webp}  onerror="this.onerror=null; alt=""></div></div>`
 
 
 
