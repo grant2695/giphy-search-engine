@@ -95,9 +95,9 @@ return resp.json()
       console.log(data.data)
       data.data.forEach((item)=>{
         console.log(item.name)
-        var items = item.name
-        $(".auto").autocomplete({
-          source: items // list of items.
+       // var items = item.name
+        //$(".auto").autocomplete({
+          //source: items // list of items.
       });
       })
     }) 
