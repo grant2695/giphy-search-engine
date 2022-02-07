@@ -75,18 +75,7 @@ window.onload = function(){
       console.log(data.data)
       
     })
-    const url2 = `http://api.giphy.com/v1/gifs/categories?api_key=${api_key}&randomid?`
-    fetch(url2).then(function(resp){
-      return resp.json()
-    }).then (function(data){
-      console.log(data)
-      console.log(data.data)
-      console.log(data.data.name)
-      data.data.forEach((item) => {
-        console.log(item.name)
-      })
-    })
-  }
+   
   $('#search-box').on('blur input', function() {
     const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX"
     const searchStr = document.querySelector('#search-box').value
