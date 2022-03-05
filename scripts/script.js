@@ -8,7 +8,7 @@ window.addEventListener ('load',(event)=>{
   const btn = document.querySelector('button')
   btn.addEventListener('click', getData)
 const trend = document.getElementById('Trending')
-trend.addEventListener('click', getData)
+//trend.addEventListener('click', getData)
 
   function getData(){
     const trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=20&part=snippet`
@@ -54,7 +54,7 @@ output.style.alignItems= 'center'
   const btn1 = document.querySelector('button')
 
   
-})
+
 function UserId(){
   const url1 = `http://api.giphy.com/v1/randomid?api_key=${api_key}`
   fetch(url1).then(function(resp){
@@ -93,42 +93,8 @@ return resp.json()
       });
       })
     }) 
-;
-
-   
-  
-  //window.onload = function(){
-    
-   /* const url2 = `http://api.giphy.com/v1/gifs/categories?api_key=${api_key}&randomid?`
-    fetch(url2).then(function(resp){
-      return resp.json()
-    }).then (function(data){
-      console.log(data)
-    })
   }
-  //const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX"
- /* function showTrend(){
-    const output = document.getElementById("container")
-    const trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=20&part=snippet`
-console.log('the url is', trending)
-fetch(trending).then(function(rep){
-  return rep.json()
-}).then(function(data){
-  console.log(data)
-  data.data.forEach((item) => {
-
-    console.log(item.images.original.webp)
-
-
-   //div = document.createElement(`div`)
-   output.innerHTML += `<img class="img-fluid p-2" src=${item.images.original.webp}  onerror="this.onerror=null; alt="">`
-
-output.style.alignItems= 'center'
-
 })
 
-  });
-
-  }*/
 
  
