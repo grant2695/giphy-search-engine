@@ -26,7 +26,7 @@ window.addEventListener("load", (event) => {
         console.log(data);
         data.data.forEach((item) => {
           console.log(item.images.original.webp);
-=======
+
 window.addEventListener ('load',(event)=>{
 
   
@@ -64,7 +64,7 @@ const trend = document.getElementById('Trending')
 
 output.style.alignItems= 'center'
 
->>>>>>> f84724711a98be3682e7892632d74109c0d742a8
+
 
           //div = document.createElement(`div`)
           output.innerHTML += `<img class="img-fluid p-2" src=${item.images.original.webp}  onerror="this.onerror=null; alt="">`;
@@ -84,7 +84,7 @@ output.style.alignItems= 'center'
 
   const btn1 = document.querySelector("button");
 
-<<<<<<< HEAD
+
   function UserId() {
     const url1 = `http://api.giphy.com/v1/randomid?api_key=${api_key}`;
     fetch(url1)
@@ -108,7 +108,7 @@ output.style.alignItems= 'center'
         console.log(data);
         console.log(data.data);
       });
-=======
+
   
 
 function UserId(){
