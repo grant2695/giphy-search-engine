@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 window.addEventListener("load", (event) => {
   console.log("page has loaded");
   const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
@@ -152,7 +152,7 @@ return resp.json()
   }
 })
 
->>>>>>> f84724711a98be3682e7892632d74109c0d742a8
+
 
     $("#search-box").on("blur input", function () {
       const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
