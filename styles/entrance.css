@@ -171,3 +171,5 @@ body {
       top:90%;
       left: 85%;
   }
+  #suggest_container { position:relative; overflow:visible; }
+#autosuggest { position:absolute; top:<height-of-search-form>; left:0px; }

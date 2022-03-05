@@ -1,4 +1,7 @@
 window.addEventListener ('load',(event)=>{
+
+  
+  
   console.log('page has loaded')
   const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX"
 
@@ -72,18 +75,7 @@ window.onload = function(){
       console.log(data.data)
       
     })
-    const url2 = `http://api.giphy.com/v1/gifs/categories?api_key=${api_key}&randomid?`
-    fetch(url2).then(function(resp){
-      return resp.json()
-    }).then (function(data){
-      console.log(data)
-      console.log(data.data)
-      console.log(data.data.name)
-      data.data.forEach((item) => {
-        console.log(item.name)
-      })
-    })
-  }
+   
   $('#search-box').on('blur input', function() {
     const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX"
     const searchStr = document.querySelector('#search-box').value
@@ -95,13 +87,13 @@ return resp.json()
       console.log(data.data)
       data.data.forEach((item)=>{
         console.log(item.name)
-        var items = item.name
-        $(".auto").autocomplete({
-          source: items // list of items.
+       // var items = item.name
+        //$(".auto").autocomplete({
+          //source: items // list of items.
       });
       })
     }) 
-});
+  };
 
    
   
@@ -124,19 +116,11 @@ fetch(trending).then(function(rep){
 }).then(function(data){
   console.log(data)
   data.data.forEach((item) => {
-
     console.log(item.images.original.webp)
-
-
    //div = document.createElement(`div`)
    output.innerHTML += `<img class="img-fluid p-2" src=${item.images.original.webp}  onerror="this.onerror=null; alt="">`
-
 output.style.alignItems= 'center'
-
 })
-
   });
-
-  }*/
-
- 
+  }
+*/
