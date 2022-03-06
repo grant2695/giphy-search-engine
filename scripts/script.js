@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bee5c09096e5f59c08ce585ee1e574b76f993dbc
 window.addEventListener ('load',(event)=>{
 
   
@@ -46,9 +49,7 @@ output.style.alignItems= 'center'
         });
       });
   }
-  document
-    .getElementById("search-box")
-    .addEventListener("keyup", function (event) {
+  document.getElementById("search-box").addEventListener("keyup", function (event) {
       event.preventDefault();
       if (event.keyCode === 13) {
         document.getElementById("btn").click();
@@ -147,4 +148,7 @@ return resp.json()
         });
     });
   })
+<<<<<<< HEAD
 
+=======
+>>>>>>> bee5c09096e5f59c08ce585ee1e574b76f993dbc
