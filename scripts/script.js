@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-
-=======
->>>>>>> bee5c09096e5f59c08ce585ee1e574b76f993dbc
 window.addEventListener ('load',(event)=>{
 
   
@@ -148,7 +144,4 @@ return resp.json()
         });
     });
   })
-<<<<<<< HEAD
 
-=======
->>>>>>> bee5c09096e5f59c08ce585ee1e574b76f993dbc
