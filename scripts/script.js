@@ -1,32 +1,5 @@
-<<<<<<< HEAD
-window.addEventListener("load", (event) => {
-  console.log("page has loaded");
-  const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
 
-  const btn = document.querySelector("button");
-  btn.addEventListener("click", getData);
-  const trend = document.getElementById("Trending");
-  //trend.addEventListener('click', getData)
 
-  function getData() {
-    const trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=20&part=snippet`;
-
-    const searchStr = document.querySelector("#search-box").value;
-
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=20&part=snippet&q=${searchStr}&limit=15`;
-    const output = document.getElementById("container");
-    output.innerHTML = "";
-    console.log("the url is", url);
-    console.log("your have searched for", searchStr);
-    const searchResults = fetch(url)
-      .then(function (rep) {
-        return rep.json();
-      })
-      .then(function (data) {
-        console.log(data);
-        data.data.forEach((item) => {
-          console.log(item.images.original.webp);
-=======
 window.addEventListener ('load',(event)=>{
 
   
@@ -64,7 +37,7 @@ const trend = document.getElementById('Trending')
 
 output.style.alignItems= 'center'
 
->>>>>>> f84724711a98be3682e7892632d74109c0d742a8
+
 
           //div = document.createElement(`div`)
           output.innerHTML += `<img class="img-fluid p-2" src=${item.images.original.webp}  onerror="this.onerror=null; alt="">`;
@@ -84,7 +57,7 @@ output.style.alignItems= 'center'
 
   const btn1 = document.querySelector("button");
 
-<<<<<<< HEAD
+
   function UserId() {
     const url1 = `http://api.giphy.com/v1/randomid?api_key=${api_key}`;
     fetch(url1)
@@ -108,7 +81,7 @@ output.style.alignItems= 'center'
         console.log(data);
         console.log(data.data);
       });
-=======
+
   
 
 function UserId(){
@@ -150,9 +123,9 @@ return resp.json()
       })
     }) 
   }
-})
+}
 
->>>>>>> f84724711a98be3682e7892632d74109c0d742a8
+
 
     $("#search-box").on("blur input", function () {
       const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
@@ -173,5 +146,5 @@ return resp.json()
           });
         });
     });
-  };
-});
+  })
+
