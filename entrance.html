@@ -11,6 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
  <script src="https://cdn.tailwindcss.com"></script>
+  
 </head>
   <body class="bg-black">
 
@@ -22,20 +23,28 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 <div  class="d-flex flex-row">
     <a class="navbar-brand" href="#">Giphy Search</a>
+    
+  
 
 
 </div>
+<div  class="d-flex justify-center" > 
+  <a id="trending" class="text-center display-inline text-white" href="#">Trending Gifs</a>
+   <a id="Stickers" class="text-center ml-2 text-white" href="#">Trending Stickers</a>
 
+</div>
 </nav>
 
 <br>
 
 <div class="bg-black">
+  
 
-      <div class="input-group container ">
-        <input id='search-box' type="search" class="form-control rounded" placeholder="Search Giphys" aria-label="Search" aria-describedby="search-addon" />
-        <button type="button" class="btn btn-outline-primary" id="btn">search</button>
-
+      <div class="input-group container rounded ">
+        
+        <input id='search-box' type="search" class=" rounded form-control " placeholder="Search Giphys" aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-primary ml-1 mr-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 float-left rounded-full " id="btn" onchange="clear()" >search</button>
+        
 
       </div>
 
@@ -56,7 +65,7 @@
 
 
   
-      <footer class="text-center text-white mt-60 " >
+      <footer class="text-center text-white mt-50 " >
   <!-- Grid container -->
   
   <!-- Grid container -->
