@@ -25,11 +25,11 @@ window.addEventListener ('load',(event)=>{
     console.log('the url is',url)
     console.log('your have searched for', searchStr)
     const searchResults =
-    fetch(url).then(function(rep){
-      return rep.json()
-    }).then(function(data){
-      console.log(data)
-      data.data.forEach((item) => {
+      fetch(url).then(function(rep){
+        return rep.json()
+      }).then(function(data){
+         console.log(data)
+          data.data.forEach((item) => {
 
         console.log(item.images.original.webp)
 
@@ -44,6 +44,8 @@ output.style.alignItems= 'center'
          
         })
       });
+      
+      
       function clear() {
         document.getElementById("search-box").value = " ";
       }
@@ -134,7 +136,7 @@ return resp.json()
                 console.log(item.images.fixed_height.webp);
 
                 //div = document.createElement(`div`)
-                output.innerHTML += `<img class="img-fluid p-2" src=${item.images.fixed_height.webp}  onerror="this.onerror=null; alt="">`;
+                output.innerHTML += `<img class="img-fluid p-2" src=${item.images.fixed_width.webp}  onerror="this.onerror=null; alt="">`;
 
                 output.style.alignItems = "center";
               });
@@ -157,7 +159,7 @@ return resp.json()
                 console.log(item.images.fixed_height.webp);
 
                 //div = document.createElement(`div`)
-                output.innerHTML += `<img class="img-fluid p-2" src=${item.images.fixed_height.webp}  onerror="this.onerror=null; alt="">`;
+                output.innerHTML += `<img class="img-fluid p-2" src=${item.images.fixed_width.webp}  onerror="this.onerror=null; alt="">`;
 
                 output.style.alignItems = "center";
               });
