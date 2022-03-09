@@ -19,7 +19,7 @@ window.addEventListener ('load',(event)=>{
     const searchStr = document.querySelector('#search-box').value
 
  
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=15&part=snippet&q=${searchStr}&limit=15`
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=30&part=snippet&q=${searchStr}&limit=15`
     const output = document.getElementById("container")
     output.innerHTML = ""
     console.log('the url is',url)
@@ -101,7 +101,7 @@ return resp.json()
     $("#search-box").on("blur input", function () {
       const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
       const searchStr = document.querySelector("#search-box").value;
-      const url3 = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=15&part=snippet&q=${searchStr}&limit=15`;
+      const url3 = `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=30&part=snippet&q=${searchStr}&limit=15`;
       fetch(url3)
         .then(function (resp) {
           return resp.json();
@@ -121,7 +121,7 @@ return resp.json()
        
         $("#trending").on("click", function () {
           const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
-          const trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=20&part=snippet`;
+          const trending = `https://api.giphy.com/v1/gifs/trending?api_key=${api_key}&limit=30&part=snippet`;
           const output = document.getElementById("container");
           output.innerHTML = "";
           fetch(trending)
@@ -144,7 +144,7 @@ return resp.json()
         });
         $("#Stickers").on("click", function () {
           const api_key = "cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX";
-          const trending = `https://api.giphy.com/v1/stickers/trending?api_key=${api_key}&limit=20&part=snippet`;
+          const trending = `https://api.giphy.com/v1/stickers/trending?api_key=${api_key}&limit=100&part=snippet`;
           const output = document.getElementById("container");
           output.innerHTML = "";
           fetch(trending)
