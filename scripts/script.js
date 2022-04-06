@@ -3,10 +3,11 @@
 window.addEventListener ('load',(event)=>{
 
     let mykey = config.MY_KEY;
-  
+
   console.log('page has loaded')
 
-
+//to use this website please use your api_key in a variable called mykey
+    //example : let mykey= 'cEpjCVyh' which is your api_key from the giphy api website
 
   const btn = document.querySelector('button')
   btn.addEventListener('click', getData)
