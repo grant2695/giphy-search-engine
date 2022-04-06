@@ -1,13 +1,13 @@
 
 
 window.addEventListener ('load',(event)=>{
-
+    //to use this website please use your api_key in a variable called mykey
+    //example : let mykey= 'cEpjCVyh' which would be your api_key from the giphy api website
     let mykey = config.MY_KEY;
 
   console.log('page has loaded')
 
-//to use this website please use your api_key in a variable called mykey
-    //example : let mykey= 'cEpjCVyh' which is your api_key from the giphy api website
+
 
   const btn = document.querySelector('button')
   btn.addEventListener('click', getData)
@@ -36,9 +36,9 @@ window.addEventListener ('load',(event)=>{
 
 
        //div = document.createElement(`div`)
-       output.innerHTML += `<img class="img-fluid p-2" src=${item.images.fixed_height.webp}  onerror="this.onerror=null; alt="">`;
+              output.innerHTML += `<img class="img-fluid p-2" src=${item.images.fixed_width.webp}  onerror="this.onerror=null; alt="">`;
 
-output.style.alignItems= 'center'
+              output.style.alignItems = "center";
 
 
 
