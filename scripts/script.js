@@ -3,7 +3,7 @@
 window.addEventListener ('load',(event)=>{
     //to use this website please use your api_key in a variable called mykey
     let mykey= 'cEpjCVyhxbYkyc40rcSJkfWfbjrU3moX' which would be your api_key from the giphy api website
-    let mykey = config.MY_KEY;
+   // let mykey = config.MY_KEY;
 
   console.log('page has loaded')
 
